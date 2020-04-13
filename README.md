@@ -1,5 +1,5 @@
 # P006---Update-COVID19-Dashboard
- This is the automated UiPath process for updating my COVID19 Dashboard. Required installation files and setup scripts can be found in "_setup" folder of this project.
+ This is the automated UiPath process for updating my COVID19 Dashboard. Required installation files and setup scripts can be found in the *_setup* folder of this project.
  
  **VM Setup Instructions:**
   
