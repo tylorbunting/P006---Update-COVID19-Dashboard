@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>676,4617</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>676,4888</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -34,7 +34,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -52,13 +52,15 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="P006 - Update COVID19 Dashboard" sap:VirtualizedContainerService.HintSize="656,4557" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="P006 - Update COVID19 Dashboard" sap:VirtualizedContainerService.HintSize="656,4788" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:QueueItem" Name="var_TransactionItem" />
       <Variable x:TypeArguments="ui:GenericValue" Name="var_QueueName" />
-      <Variable x:TypeArguments="ui:GenericValue" Name="var_COVID19WorkingDirectory" />
+      <Variable x:TypeArguments="x:String" Name="var_COVID19WorkingDirectory" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -86,7 +88,7 @@
       </Assign>
       <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="[in_COVID19WorkingDirectory]" DisplayName="Get Working Directory Asset" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
         <ui:GetRobotAsset.Value>
-          <OutArgument x:TypeArguments="ui:GenericValue">[var_COVID19WorkingDirectory]</OutArgument>
+          <OutArgument x:TypeArguments="x:String">[var_COVID19WorkingDirectory]</OutArgument>
         </ui:GetRobotAsset.Value>
       </ui:GetRobotAsset>
       <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start CMD Process" FileName="[“C:\Windows\System32\cmd.exe”]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
@@ -185,17 +187,18 @@
               <InArgument x:TypeArguments="x:Int32">[var_Count + 1]</InArgument>
             </Assign.Value>
           </Assign>
-          <Delay Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+          <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
         </Sequence>
       </DoWhile>
-      <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="572,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
+      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="572,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
     </Sequence>
-    <Sequence DisplayName="2. Add Google Tag" sap:VirtualizedContainerService.HintSize="614,672" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="2. Add Google Tag" sap:VirtualizedContainerService.HintSize="614,903" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="var_IndexCode" />
         <Variable x:TypeArguments="x:String" Name="var_GoogleTagCode" />
         <Variable x:TypeArguments="ui:GenericValue" Name="var_IndexCodeWithTag" />
         <Variable x:TypeArguments="ui:GenericValue" Name="var_StartOfHeader" />
+        <Variable x:TypeArguments="x:String" Name="var_indexFilePath" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -203,7 +206,16 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadTextFile Content="[var_IndexCode]" DisplayName="Read Text File" FileName="[var_COVID19WorkingDirectory + &quot;index.html&quot;]" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[var_indexFilePath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[var_COVID19WorkingDirectory + "index.html"]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;searching for &quot; + var_indexFilePath]" />
+      <ui:ReadTextFile Content="[var_IndexCode]" DisplayName="Read Text File" FileName="[var_indexFilePath]" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
       <ui:ReadTextFile Content="[var_GoogleTagCode]" DisplayName="Read Text File" FileName="[var_COVID19WorkingDirectory +&quot;header_content.html&quot;]" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
       <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>

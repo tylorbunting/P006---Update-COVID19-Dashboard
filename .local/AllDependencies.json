@@ -2457,15 +2457,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tbun2893\\.nuget\\packages\\": {}
+    "C:\\Users\\BotMachine001\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "P006_UpdateCOVID19Dashboard",
       "projectName": "P006_UpdateCOVID19Dashboard",
-      "projectPath": "C:\\Users\\tbun2893\\Documents\\GitHub\\P006 - Update COVID19 Dashboard\\.local",
-      "packagesPath": "C:\\Users\\tbun2893\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tbun2893\\Documents\\GitHub\\P006 - Update COVID19 Dashboard\\.local"
+      "projectPath": "C:\\Users\\BotMachine001\\Documents\\GitHub\\P006---Update-COVID19-Dashboard\\.local",
+      "packagesPath": "C:\\Users\\BotMachine001\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BotMachine001\\Documents\\GitHub\\P006---Update-COVID19-Dashboard\\.local"
     },
     "frameworks": {
       "net461": {
