@@ -59,15 +59,6 @@
           "lib/DocumentFormat.OpenXml.dll": {}
         }
       },
-      "DynamicInterop/0.8.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.2/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.2/DynamicInterop.dll": {}
-        }
-      },
       "Extended.Wpf.Toolkit/2.8.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -481,28 +472,6 @@
           "lib/net45/NPOI.OpenXml4Net.dll": {},
           "lib/net45/NPOI.OpenXmlFormats.dll": {},
           "lib/net45/NPOI.dll": {}
-        }
-      },
-      "R.NET/1.7.0": {
-        "type": "package",
-        "dependencies": {
-          "DynamicInterop": "[0.8.1]"
-        },
-        "frameworkAssemblies": [
-          "System.Numerics"
-        ],
-        "compile": {
-          "lib/net40/_._": {}
-        },
-        "runtime": {
-          "lib/net40/RDotNet.NativeLibrary.dll": {},
-          "lib/net40/RDotNet.dll": {}
-        }
-      },
-      "R.NET.Community/1.7.0": {
-        "type": "package",
-        "dependencies": {
-          "R.NET": "1.7.0"
         }
       },
       "SharpZipLib/1.0.0": {
@@ -1312,19 +1281,6 @@
         "lib/DocumentFormat.OpenXml.dll"
       ]
     },
-    "DynamicInterop/0.8.1": {
-      "sha512": "ijI9TsU13X/glY9fj/LAJm0/WO59OQB+mrW+tBKh5F7nyYc053ezLZ71/neNr17/p77/vf/NEjTIYI+atmLr4Q==",
-      "type": "package",
-      "path": "dynamicinterop/0.8.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dynamicinterop.0.8.1.nupkg.sha512",
-        "dynamicinterop.nuspec",
-        "lib/netstandard1.2/DynamicInterop.XML",
-        "lib/netstandard1.2/DynamicInterop.dll"
-      ]
-    },
     "Extended.Wpf.Toolkit/2.8.0": {
       "sha512": "wKjJl4sDyXTVzgiKTBTw8jT0/3OwpEklQuWGe1Nz2HX0joiBeUzIurY2mnERni+8XHwateRcuks6yk/cuR22fA==",
       "type": "package",
@@ -1792,32 +1748,6 @@
         "logo/60_60.jpg",
         "npoi.2.4.1.nupkg.sha512",
         "npoi.nuspec"
-      ]
-    },
-    "R.NET/1.7.0": {
-      "sha512": "f39oh96jPjci+Dd0f9Oj8ST72xW4tQPfKMoe2MnRY81WzzRqSwoxSLgZKlX3dhubFjiCCrbf37V7MICgNfvlbw==",
-      "type": "package",
-      "path": "r.net/1.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/RDotNet.NativeLibrary.XML",
-        "lib/net40/RDotNet.NativeLibrary.dll",
-        "lib/net40/RDotNet.XML",
-        "lib/net40/RDotNet.dll",
-        "r.net.1.7.0.nupkg.sha512",
-        "r.net.nuspec"
-      ]
-    },
-    "R.NET.Community/1.7.0": {
-      "sha512": "XYZG+yVKiordJFro3bA8c6moIsv0aHOEYDZKK4Y8aRZVlfYhaEvJ8XRv2IlujZcz5Ow52D2EC10TbTUL3osWAw==",
-      "type": "package",
-      "path": "r.net.community/1.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "r.net.community.1.7.0.nupkg.sha512",
-        "r.net.community.nuspec"
       ]
     },
     "SharpZipLib/1.0.0": {
@@ -2520,7 +2450,6 @@
     ".NETFramework,Version=v4.6.1": [
       "CommandPrompt.Activities >= 1.0.7 <= 1.0.7",
       "GlobalExceptionHandler >= 4.0.2 <= 4.0.2",
-      "R.NET.Community >= 1.7.0 <= 1.7.0",
       "UiPath.Excel.Activities >= 2.8.0-preview <= 2.8.0-preview",
       "UiPath.Mail.Activities >= 1.8.0-preview <= 1.8.0-preview",
       "UiPath.System.Activities >= 19.12.0-preview <= 19.12.0-preview",
@@ -2532,8 +2461,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "P006 - Update COVID19 Dashboard",
-      "projectName": "P006 - Update COVID19 Dashboard",
+      "projectUniqueName": "P006_UpdateCOVID19Dashboard",
+      "projectName": "P006_UpdateCOVID19Dashboard",
       "projectPath": "C:\\Users\\tbun2893\\Documents\\GitHub\\P006 - Update COVID19 Dashboard\\.local",
       "packagesPath": "C:\\Users\\tbun2893\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\tbun2893\\Documents\\GitHub\\P006 - Update COVID19 Dashboard\\.local"
@@ -2550,11 +2479,6 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[4.0.2, 4.0.2]"
-          },
-          "R.NET.Community": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.7.0, 1.7.0]"
           },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
@@ -2579,217 +2503,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Numerics.Vectors 4.4.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Numerics.Vectors"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Buffers 4.4.0' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Buffers"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'GlobalExceptionHandler 4.0.2' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "GlobalExceptionHandler"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Runtime.CompilerServices.Unsafe 4.5.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Runtime.CompilerServices.Unsafe"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.Hosting.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.Hosting.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Hosting.Server.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Hosting.Server.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Http.Extensions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Http.Extensions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Memory 4.5.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Memory"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.Configuration.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.Configuration.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Http 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Http"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Diagnostics 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Diagnostics"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Http.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Http.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.ObjectPool 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.ObjectPool"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Reflection.Metadata 1.6.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Reflection.Metadata"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.WebUtilities 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.WebUtilities"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Net.Http.Headers 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Net.Http.Headers"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.Options 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.Options"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Encodings.Web 4.5.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Text.Encodings.Web"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Diagnostics.Abstractions 2.1.1' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Diagnostics.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Http.Features 2.1.1' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Http.Features"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.Logging.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.Logging.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Diagnostics.DiagnosticSource 4.5.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Diagnostics.DiagnosticSource"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.FileSystemGlobbing 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.FileSystemGlobbing"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.FileProviders.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.FileProviders.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.DependencyInjection.Abstractions 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.Primitives 2.1.1' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.Primitives"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Collections.Immutable 1.5.0' from source 'https://api.nuget.org/v3/index.json': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Collections.Immutable"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Buffers 4.5.0' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Buffers"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Hosting.Abstractions 2.1.1' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.AspNetCore.Hosting.Abstractions"
-    },
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.Extensions.FileProviders.Physical 2.1.1' from source 'https://gallery.uipath.com/api/v2': This package is signed but not by a trusted signer.",
-      "libraryId": "Microsoft.Extensions.FileProviders.Physical"
-    }
-  ]
+  }
 }

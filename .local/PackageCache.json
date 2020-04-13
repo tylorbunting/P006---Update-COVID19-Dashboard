@@ -2,6 +2,52 @@
   "Packages": [
     {
       "Package": {
+        "Id": "CommandPrompt.Activities",
+        "Version": "1.0.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\tbun2893\\.nuget\\packages\\commandprompt.activities/1.0.7\\lib/WindowsCommandPromptActivities.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "GlobalExceptionHandler",
+        "Version": "4.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\tbun2893\\.nuget\\packages\\globalexceptionhandler/4.0.2\\lib/netstandard2.0/GlobalExceptionHandler.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.diagnostics/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http.extensions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http.features/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.webutilities/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.fileproviders.physical/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.filesystemglobbing/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.hosting.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.logging.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.objectpool/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.options/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.primitives/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.net.http.headers/2.1.1\\lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.buffers/4.5.0\\lib/netstandard2.0/System.Buffers.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.5.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.memory/4.5.1\\lib/netstandard2.0/System.Memory.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.numerics.vectors/4.4.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.reflection.metadata/1.6.0\\lib/netstandard2.0/System.Reflection.Metadata.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.1\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\tbun2893\\.nuget\\packages\\system.text.encodings.web/4.5.0\\lib/netstandard2.0/System.Text.Encodings.Web.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.8.0-preview"
       },
@@ -104,63 +150,6 @@
         "C:\\Users\\tbun2893\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Tesseract.dll",
         "C:\\Users\\tbun2893\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.dll"
       ]
-    },
-    {
-      "Package": {
-        "Id": "R.NET.Community",
-        "Version": "1.7.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\tbun2893\\.nuget\\packages\\dynamicinterop/0.8.1\\lib/netstandard1.2/DynamicInterop.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\r.net/1.7.0\\lib/net40/RDotNet.NativeLibrary.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\r.net/1.7.0\\lib/net40/RDotNet.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "CommandPrompt.Activities",
-        "Version": "1.0.7"
-      },
-      "Assemblies": [
-        "C:\\Users\\tbun2893\\.nuget\\packages\\commandprompt.activities/1.0.7\\lib/WindowsCommandPromptActivities.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "GlobalExceptionHandler",
-        "Version": "4.0.2"
-      },
-      "Assemblies": [
-        "C:\\Users\\tbun2893\\.nuget\\packages\\globalexceptionhandler/4.0.2\\lib/netstandard2.0/GlobalExceptionHandler.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.diagnostics/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http.extensions/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Extensions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.http.features/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.aspnetcore.webutilities/2.1.1\\lib/netstandard2.0/Microsoft.AspNetCore.WebUtilities.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.fileproviders.physical/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.filesystemglobbing/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.hosting.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.logging.abstractions/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.objectpool/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.options/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.extensions.primitives/2.1.1\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\microsoft.net.http.headers/2.1.1\\lib/netstandard2.0/Microsoft.Net.Http.Headers.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.buffers/4.5.0\\lib/netstandard2.0/System.Buffers.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.diagnostics.diagnosticsource/4.5.0\\lib/net46/System.Diagnostics.DiagnosticSource.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.memory/4.5.1\\lib/netstandard2.0/System.Memory.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.numerics.vectors/4.4.0\\lib/net46/System.Numerics.Vectors.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.reflection.metadata/1.6.0\\lib/netstandard2.0/System.Reflection.Metadata.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.1\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "C:\\Users\\tbun2893\\.nuget\\packages\\system.text.encodings.web/4.5.0\\lib/netstandard2.0/System.Text.Encodings.Web.dll"
-      ]
     }
   ],
   "Conflicts": [],
@@ -198,11 +187,6 @@
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
       "Version": "2.5.0",
-      "Dependencies": []
-    },
-    "DynamicInterop": {
-      "Id": "DynamicInterop",
-      "Version": "0.8.1",
       "Dependencies": []
     },
     "Extended.Wpf.Toolkit": {
@@ -563,26 +547,6 @@
         {
           "Item1": "SharpZipLib",
           "Item2": "[1.0.0, )"
-        }
-      ]
-    },
-    "R.NET": {
-      "Id": "R.NET",
-      "Version": "1.7.0",
-      "Dependencies": [
-        {
-          "Item1": "DynamicInterop",
-          "Item2": "[0.8.1, 0.8.1]"
-        }
-      ]
-    },
-    "R.NET.Community": {
-      "Id": "R.NET.Community",
-      "Version": "1.7.0",
-      "Dependencies": [
-        {
-          "Item1": "R.NET",
-          "Item2": "[1.7.0, )"
         }
       ]
     },
